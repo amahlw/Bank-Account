@@ -71,8 +71,8 @@ class BankAccount:
 
 
 # example 3
-eng = BankAccount('England Robert Wright')
-eng.deposit(9000)
-eng.withdraw(25)
-eng.interest()
-eng.print_receipt()
+# eng = BankAccount('England Robert Wright')
+# eng.deposit(9000)
+# eng.withdraw(25)
+# eng.interest()
+# eng.print_receipt()

@@ -1,2 +1,2 @@
 ## The Wright Union 
-**The Brothers and Sister Union.
+**The Brothers and Sister Union. 
