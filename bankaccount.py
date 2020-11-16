@@ -13,51 +13,48 @@ class BankAccount:
 
     def deposit(self, amount):
         self.balance = self.balance + amount
+        # assisted by chegg tutor
+        print("Amount Deposited: ${:,.2f}".format(amount))
 
-    # withdraw
+#     # withdraw
 
     def withdraw(self, amount):
         if self.balance-amount > 0:
             self.balance -= amount
-            # return f"Your account balance is {account.print_balance(3456788)}"
-        # balance decrease by amount withdrawn
-        # self.balance = self.balance - amount
-            # print(f"account balance is {withdraw}"
+            self.balance = self.balance - amount
 
         else:
             self.balance -= 35
             print("Insufficient Funds")
 
-    # interest
+#     # interest
 
     def interest(self):
         rest = self.balance*0.00083
         self.balance = self.balance + rest
 
-    # print balance
+#     # print balance
 
     def print_balance(self):
+        print("Your account balance is ${:,.2f}".format(self.balance))
+
         return self.balance
+
+        # print Reciept
 
     def print_receipt(self):
         print(self.full_name)
         # assisted by chegg tutor
         acc = str(self.account_number)
-        print(acc)
+
         print('Account No.:****{}'.format(acc[4:]))
         print('Routing No.: {}'.format(self.route_number))
-        print('Balance:${:,.2f}'.format(self.balance))
+        print('Your Account Balance is :${:,.2f}'.format(self.balance))
 
-        # creating the instance
+#         # creating the instance
 
 
-account1 = BankAccount('kash')
-
+account1 = BankAccount('Kash')
 account1.deposit(100)
-# account.deposit(100)
-# account.deposit(400)
-# account.print_balance()
-# account.withdraw(700)
-# account.print_balance()
-# account.withdraw(1700)
-# account.print_balance()
+# account1.print_balance()
+account1.print_receipt()
